@@ -11,7 +11,7 @@ import static io.vertx.core.http.HttpHeaders.CONTENT_TYPE;
 
 public class HttpApplication extends AbstractVerticle {
 
-  static final String template = "Howdio, %s!";
+  static final String template = "Howdi0, %s!";
 
   @Override
   public void start(Future<Void> future) {
@@ -29,7 +29,7 @@ public class HttpApplication extends AbstractVerticle {
             // Retrieve the port from the configuration, default to 8080.
             config().getInteger("http.port", 8080), ar -> {
               if (ar.succeeded()) {
-                System.out.println("Server HXP 0002 started on port " + ar.result().actualPort());
+                System.out.println("Server HXP 00033 started on port " + ar.result().actualPort());
               }
               future.handle(ar.mapEmpty());
             });
